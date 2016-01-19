@@ -14,7 +14,9 @@ aside{
   width:47%
 
 }
-
+p{
+  margin-bottom: 12px;
+}
 header{
   margin: 0% 5% 0% 5%;
   background-color: gray;

@@ -162,6 +162,16 @@ div.zen-resources ul li {
     padding-bottom: 5%;
     color: #799692;
 }
+ #view{
+
+        padding: 1.5% 2% 1.5% 2%;
+        color: white;
+        background: rgba(255, 255, 255, 0.2) 20%;
+        text-decoration: none;
+        margin-top:2%;
+        margin-bottom: 2%;
+
+    }
 
 .requirements p:last-child a {
     color: white;
@@ -237,13 +247,9 @@ div.zen-resources ul li {
         line-height: 2;
         font-weight: normal;
     }
-    #view{
+    .view{
         top:-40px;
         margin-left: 64% ;
-        padding: 1.5% 2% 1.5% 2%;
-        color: white;
-        background: rgba(255, 255, 255, 0.2) 20%;
-
     }
     .summary,
     .preamble {

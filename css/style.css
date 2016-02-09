@@ -1,10 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 html,
 body {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Libre Baskerville', sans-serif;
 }
 
 .page-wrapper {
@@ -16,7 +14,6 @@ header {
     background: url("../image/gridlines.png"), url("../image/huntington.jpg") no-repeat;
     text-align: center;
     color: white;
-
 }
 
 h1,
@@ -42,33 +39,12 @@ h3 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 28px;
 }
-.zen-resources li a{
-    color: #497466;
-}
-.intro a, .intro a:visited {
-    position: relative;
-    display: inline-block;
-    padding: 1px 5px 1px 15px;
-    margin: -1px 1px -1px 1px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
-    color: #809b7e;
-    font-family: 'Julius Sans One', sans-serif;
-    text-transform: uppercase;
-}
-.intro a:hover, .intro a:focus {
-    z-index: 2;
-    color: #fff;
-    background: #3d8a9f;
-    text-decoration: none;
-}
 
 .summary,
 .preamble,
 .supporting {
     box-sizing: border-box;
-    padding: 0% 5% 0 5%;
+    padding: 0 5% 0 5%;
     text-align: justify;
 }
 
@@ -118,7 +94,7 @@ div.zen-resources ul li {
 
 .design-selection li,
 .zen-resources li {
-     padding: 1.5em 5%;
+    padding: 1.5em 5%;
     border-top: solid 1px #d9e3dc;
     color: black;
     font-style: italic;
@@ -126,10 +102,6 @@ div.zen-resources ul li {
 
 .zen-resources li {
     border-top: solid 1px #a0b9ad;
-    font-style: normal;
-    display: block;
-    margin-bottom: 0.25em;
-    font-family: 'Julius Sans One', sans-serif;
     font-style: normal;
 }
 
@@ -139,6 +111,7 @@ div.zen-resources ul li {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.2em;
     font-style: normal;
+    text-transform: uppercase;
     color: #497466;
 }
 
@@ -153,7 +126,7 @@ div.zen-resources ul li {
     text-align: center;
     font-size: 2em;
     font-style: italic;
-    background: url("../image/gridlines.png"), url("../image/koi.jpg") no-repeat;
+    background: url("../image/gridlines.png"), url("../image/koi.jpg");
     box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
     margin-left: 0;
     margin-bottom: 0;
@@ -162,16 +135,6 @@ div.zen-resources ul li {
     padding-bottom: 5%;
     color: #799692;
 }
- #view{
-
-        padding: 1.5% 2% 1.5% 2%;
-        color: white;
-        background: rgba(255, 255, 255, 0.2) 20%;
-        text-decoration: none;
-        margin-top:2%;
-        margin-bottom: 2%;
-
-    }
 
 .requirements p:last-child a {
     color: white;
@@ -185,11 +148,7 @@ div.zen-resources ul li {
     h3 {
         text-align: left;
     }
-    ul{
-        -webkit-padding-start: 0px;
-    }
     div#zen-participation div#zen-benefits {
-
         padding-left: 5%;
         margin-left: -5%;
         margin-right: -5%;
@@ -203,7 +162,7 @@ div.zen-resources ul li {
     }
     #side li {
         float: none;
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 }
@@ -233,14 +192,14 @@ div.zen-resources ul li {
 @media only screen and (min-width: 1132px) {
     body {
         background: linear-gradient(to right, #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
-
     }
     header {
+        width: 100%;
+        -webkit-background-size: cover;
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0) 66%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.2) 20%), url("../image/gridlines.png"), url("../image/huntington.jpg") no-repeat;
         z-index: 2;
         height: 250px;
-
-        background-size: cover;
+        border-top: 15px solid #42686B;
     }
     h1,
     h2 {
@@ -250,10 +209,6 @@ div.zen-resources ul li {
         font-size: 16px;
         line-height: 2;
         font-weight: normal;
-    }
-    #view{
-        top:-40px;
-        margin-left: 64% ;
     }
     .summary,
     .preamble {
@@ -267,14 +222,10 @@ div.zen-resources ul li {
     .supporting {
         float: left;
     }
-    .summary{
-        margin-top:20px;
-    }
     .wrapper {
         position: absolute;
         left: 66%;
         width: 34%;
-
     }
     div.participation,
     div.benefits {
@@ -285,17 +236,11 @@ div.zen-resources ul li {
         padding-left: 9%;
     }
     .zen-resources {
-
-        margin-top: 270px;
-    }
-    a{
-        color: #0d8ba1;
-        text-decoration: none;
+        margin-top: 100px;
     }
     .requirements p:last-child {
         padding-right: 43.4%;
         padding-left: 35%;
-        background-size: cover;
     }
     footer {
         width: 100%;
@@ -306,7 +251,6 @@ div.zen-resources ul li {
         text-align: center;
         font-size: 50px;
         font-family: 'regular', sans-serif;
-
     }
     footer a {
         position: relative;
@@ -316,6 +260,5 @@ div.zen-resources ul li {
         padding: 40px 0 0 0;
         margin: 0 0.5em;
         color: rgba(255, 255, 255, 0.5);
-        text-decoration: none;
     }
 }

@@ -42,7 +42,7 @@ function manipulation(str) {
 
         }
         }
-       console.log(str);
+       document.getElementById("result").innerText = "Resulting string :- "+str;
 
 
     }

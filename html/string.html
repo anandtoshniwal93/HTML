@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>String Manipulation</title>
+  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/string.css">
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
@@ -9,6 +10,7 @@
 </head>
 <body>
   <input type="text" id="string">
-  <input type="submit" onclick="manipulation(document.getElementById('string').value);">
+  <button  type="submit" id="btn" onclick="manipulation(document.getElementById('string').value);" value="submit">Submit</button><br/>
+  <label id="result"></label>
 </body>
 </html>

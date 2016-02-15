@@ -24,20 +24,25 @@ if(choice=="ci")
 }
 else
 {
-  var total=Math.ceil(((parseInt(p) +(p*(r/(1-Math.pow((1+r),-n))))).toFixed(2))/$('#repayment').val());
+
+
+
   if(period_choice=="weekly")
   {
-    document.getElementById('result').innerText= total +"weeks";
+
+    r=r/52;
+      n=n*52;
+
   }
   else if(period_choice=="monthly")
   {
-        document.getElementById('result').innerText= total +"months";
-  }
-  else if(period_choice=="yearly")
-  {
-    document.getElementById('result').innerText= total +"year";
-  }
+      r=r/12;
+      n=n*12;
+}
 
+
+ var total=Math.round((p*r * Math.pow((1+r),n)/[Math.pow((1+r),n)-1]));
+ document.getElementById('result').innerText="EMI    "+ total;
 }
 
 }
